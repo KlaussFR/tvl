@@ -61,7 +61,7 @@ local function updateGUI()
         -- Check if the player has an accessory
         if entity then
             for _, accessory in ipairs(entity:GetChildren()) do
-                for _, accessoryName in ipairs({"Bonnie", "Qetsiyah", "Hope", "DarkJosie"}) do
+                for _, accessoryName in ipairs({"Bonnie", "Qetsiyah", "Hope", "DarkJosie", "Mason"}) do
                     if string.find(accessory.Name, accessoryName) then
                         -- Create label with adjusted vertical position
                         createLabel(labelFrame, playerName, playerName .. " has " .. accessoryName, UDim2.new(1, -5, 0, yOffset))
